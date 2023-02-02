@@ -1,0 +1,257 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* estilos generales */
+
+body{
+    background-image: linear-gradient(to bottom,violet,white); 
+}
+
+
+
+/* estilo header */
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+header .frase{
+    display: flex;
+    color: violet;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 30px;
+}
+
+header .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 140, 194);
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+.menu ul li a{
+    color:black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;    
+    justify-content: center;
+    padding: 10px;
+}
+
+  
+/* estilos del main  index*/
+
+main h2{
+    display: none;
+}
+
+
+main h3{
+    font-family: 'Caveat', cursive;
+    color:rgb(66, 66, 66);
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+main .imagenes img{
+    width: 40%;
+}
+
+
+main h4{
+   margin-bottom: 20px;
+}
+
+main h4 p{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+main h4 img{
+    width: 100%;
+}
+
+/* estilos pantallas de escritorio */
+
+@media screen and (min-width:1024px){
+
+    header .frase{
+        align-items: center;
+    }
+
+    section nav ul li:hover{
+        transform: scale(1.1);
+    }
+
+    main h2{
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    main .imagenes img{
+        display: flex;
+        width: 30%;
+    }
+
+}
+   
+
+
+
+/* estilos page productos */
+
+.container{
+    
+}
+
+
+
+
+.menu-productos nav ul li{
+    list-style: none;
+    background-color: rgb(193, 153, 231);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+    color: rgb(29, 29, 29);
+    margin: 30px;
+  
+
+}
+
+
+.difusores{
+    text-align: center;
+     
+}
+
+.perfumes{
+    text-align: center;
+ 
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
+
+
+
+/* estilos page novedades */
+
+.nombre{
+    font-family: 'Caveat', cursive;
+    margin-left: 150px;
+    margin-top: 80px;
+    margin-right: 150px;
+    text-align: center;
+   }
+
+.descripcion{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: white;
+    padding: 150px;
+}
+
+
+/* estilos page contacto */
+
+.titulo{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+    
+
+.canales{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.canales__t{
+    display: inline-block;
+    margin: 20px;
+    width: 500px;
+    height: 150px;
+    background-color: rgb(205, 161, 247);
+    color: rgb(65, 63, 63);
+    
+
+}
+
+.canales__t--estilo{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+/* estilos page catalogo */
+
+.catalogo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* estilo footer */
+
+footer{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+
+}
+
+
+
