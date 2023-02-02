@@ -138,45 +138,74 @@ main h4 img{
 
 /* estilos page productos */
 
-.container{
-    
+body#productos{
+    background-color: linear-gradient(to bottom,violet,white);
 }
 
 
+body#productos header{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "frase logo"
+    "menu menu"
+    "menu-productos menu-productos"
+    "section-difusores section-perfumes"
+    "section-textiles section-textiles";
+}
+
+header .frase{
+    grid-area: frase;
+}
+
+header .logo{
+    grid-area: logo;
+}
+
+.menu{
+    grid-area: menu;
+    
+}
+
+.menu-productos{
+    grid-area: menu-productos;
+   
+}
 
 
 .menu-productos nav ul li{
+    display: inline-block;
     list-style: none;
     background-color: rgb(193, 153, 231);
     font-size: 20px;
     font-weight: bold;
-    padding: 10px;
     font-family: 'Caveat', cursive;
     color: rgb(29, 29, 29);
-    margin: 30px;
-  
-
-}
-
-
-.difusores{
-    text-align: center;
-     
-}
-
-.perfumes{
-    text-align: center;
+    padding: 5px;
+       
  
 }
 
-main{
-    grid-area: main;
+.difusores{
+    grid-area: section-difusores;
+    justify-self: center;
+
 }
 
-footer{
-    grid-area: footer;
+.difusores img{
+    align-self: center;
 }
 
+.perfumes{
+    grid-area: section-perfumes;
+    align-self: center;
+}
+
+.textiles{
+    grid-area: section-textiles;
+}
 
 
 
@@ -195,7 +224,7 @@ footer{
 .descripcion{
     font-family: 'Caveat', cursive;
     font-size: 50px;
-    color: white;
+    color: rgb(59, 59, 59);
     padding: 150px;
 }
 
